@@ -24,6 +24,7 @@ html {
 }
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #E5CB90;
 }
 h1,
 h2,
@@ -33,6 +34,15 @@ h5,
 h6 {
   font-family: 'Ubuntu', sans-serif;
   color: saddlebrown;
+}
+a {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-size: 5rem;
+}
+p {
+  font-size: 2rem;
 }
 nav {
   background-color: #42860E;
@@ -57,6 +67,85 @@ nav .links a {
   font-size: 3rem;
   text-decoration: none;
   color: #E5CB90;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  border-bottom: 3px dashed saddlebrown;
+  padding: 1%;
+}
+header h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 1%;
+}
+header .videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: none;
+}
+header .videoContainer video {
+  width: 60%;
+  border: 3px solid saddlebrown;
+  border-radius: 20px;
+}
+.stepContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.stepContent hr {
+  width: 80%;
+  text-align: center;
+  border: 1px dashed saddlebrown;
+}
+.stepContent .step {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: none;
+  margin: 1% auto;
+}
+.stepContent .step div {
+  margin: 1%;
+}
+.stepContent .step .stepImg {
+  width: 20%;
+}
+.stepContent .step .stepImg img {
+  border: 3px solid saddlebrown;
+  border-radius: 20px;
+}
+.stepContent .step .stepTitle {
+  text-align: center;
+  width: 20%;
+}
+.stepContent .step .stepTitle h2 {
+  font-size: 5rem;
+}
+.stepContent .step .stepTitle button {
+  width: 50%;
+  padding: 1%;
+  font-size: 2rem;
+  margin: 3%;
+}
+.stepContent .step .description {
+  width: 60%;
+  padding: 1%;
+}
+.stepContent .step .description h3 {
+  font-size: 3rem;
+}
+.stepContent .step .description p {
+  padding: 1% 0;
+}
+.step:nth-of-type(even) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row-reverse;
 }
 html,
 body {
