@@ -1,42 +1,90 @@
-header {
-    border-bottom: 3px dashed @textColor;
-    padding: 1%;
-
-    h1 {
-        font-size: 5rem;
-        text-align: center;
-        padding: 1%;
-    } //h1
-    
-    .videoContainer {
-        .flex();
-        
-        video {
-            width: 50%;
-            height: 60vh;
-            border: 3px solid @textColor;
-        }//video
-    }//class .video
-}//header
-
-.stepOne {
-    .flex(space-around);
-    width: 100%;
-
-    img {
-        width: 10%; 
-        padding: 1%;
-    }
-    .stepTitle {
-        width: 20%;
-        text-align: center;
-
-        button {
-            width: 50%;
-        }
-    }
-    p {
-        width: 70%;
-        font-size: ;
-    }
+* {
+//   border: 1px solid black;
 }
+
+////////////////////// HEADER ////////////////////
+
+header {
+  border-bottom: 3px dashed @textColor;
+  padding: 1%;
+
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+    padding: 1%;
+  } //h1
+
+  .videoContainer {
+    .flex();
+
+    video {
+      width: 60%;
+      border: 3px solid @textColor;
+      border-radius: 20px;
+    } //video
+  } //class .video
+} //header
+
+//////////////// CONTENT //////////////////
+
+.stepContent {
+  width: 100%;
+  .flex(@flow:column);
+
+  hr {
+    width: 80%;
+    text-align: center;
+    border: 1px dashed @textColor;
+  }//hr
+
+  .step {
+    .flex(space-around);
+    margin: 1% auto;
+
+    div {
+      margin: 1%;
+    }//step div
+
+    .stepImg {
+      width: 20%;
+
+      img {
+        border: 3px solid @textColor;
+        border-radius: 20px;
+      }//img
+    }// .stepImg
+
+    .stepTitle {
+      text-align: center;
+      width: 20%;
+
+      h2 {
+        font-size: 5rem;
+      }//h2
+
+      button {
+        width: 50%;
+        .stepButtons();
+        margin: 3%;
+      }//button
+    }
+    .description {
+      width: 60%;
+      padding: 1%;
+
+      h3 {
+        font-size: 3rem;
+      }//h3
+
+      p {
+          padding: 1% 0;
+      }
+    }//description
+  }//step
+}//step content
+
+// this reveses every other step
+
+.step:nth-of-type(even) {
+  .flex(@flow: row-reverse);
+} //step nth of type
