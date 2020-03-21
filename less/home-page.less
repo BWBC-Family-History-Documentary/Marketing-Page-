@@ -1,0 +1,76 @@
+html, body {
+    background-color: @main-bg;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('/img/main-header-image.jpg');
+    background-color: #cccccc;
+    height: 60vh; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+    h1 {
+        text-shadow: 3px 3px 3px black;
+        color: darkred;
+        font-weight: bolder;
+        font-size: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    h2 {
+        text-shadow: 3px 3px black;
+        color: darkred;
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-header-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        height: 18vh;
+        width: 20%;
+        background: ghostwhite;
+        padding: 1% 1%;
+        border: 4px solid @nav-bg;
+
+            p{
+                font-size: 2rem;
+                width: 75%;
+            }
+
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 2% auto;
+                padding: 2% 3%;
+                width: 30%;
+                background-color: @nav-bg;
+                border-radius: 4px;
+
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none;
+                        color: ghostwhite;
+                    }
+            }
+    }
+}
