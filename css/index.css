@@ -24,6 +24,7 @@ html {
 }
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #E5CB90;
 }
 h1,
 h2,
@@ -34,12 +35,22 @@ h6 {
   font-family: 'Ubuntu', sans-serif;
   color: saddlebrown;
 }
+a {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-size: 5rem;
+}
+p {
+  font-size: 2rem;
+}
 nav {
   background-color: #42860E;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: none;
+  border-bottom: 3px solid saddlebrown;
 }
 nav .logo {
   width: 5%;
@@ -56,4 +67,47 @@ nav .links a {
   font-size: 3rem;
   text-decoration: none;
   color: #E5CB90;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  border-bottom: 3px dashed saddlebrown;
+  padding: 1%;
+}
+header h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 1%;
+}
+header .videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: none;
+}
+header .videoContainer video {
+  width: 50%;
+  height: 60vh;
+  border: 3px solid saddlebrown;
+}
+.stepOne {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: none;
+  width: 100%;
+}
+.stepOne img {
+  width: 10%;
+  padding: 1%;
+}
+.stepOne .stepTitle {
+  width: 20%;
+  text-align: center;
+}
+.stepOne .stepTitle button {
+  width: 50%;
+}
+.stepOne p {
+  width: 70%;
+  font-size: ;
 }
