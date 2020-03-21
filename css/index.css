@@ -101,7 +101,6 @@ header h1 {
   max-width: 30%;
   height: auto;
   align: center;
-  border: 3px solid saddlebrown;
 }
 .sectionTwo {
   border-top: 3px dashed saddlebrown;
@@ -122,8 +121,7 @@ header h1 {
   margin-bottom: 30px;
   max-width: 30%;
   height: auto;
-  align: center;
-  border: 3px solid saddlebrown;
+  padding-right: 30px;
 }
 .sectionThree {
   border-top: 3px dashed saddlebrown;
@@ -157,6 +155,4 @@ header h1 {
   margin-bottom: 30px;
   max-width: 30%;
   height: auto;
-  align: center;
-  border: 3px solid saddlebrown;
 }
