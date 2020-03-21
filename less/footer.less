@@ -1,22 +1,21 @@
-nav {
-    background-color: @nav-bg;
+footer {
+    background-color: @footer-bg;
+    width:100%;
     .flex(space-between);
-    border-bottom: 3px solid @textColor;
+    padding: 1%;
+    border-top: 3px solid @textColor;
 
-    .logo {
-        width: 5%;
-        padding: 1%;
-    } //logo
-    
+    p {
+        color: @main-bg;
+    }
+
     .links {
-        width: 80%;
-        .flex(space-around);
+        .flex();
 
         a {
-            font-size: 3rem;
             text-decoration: none;
+            font-size: 2rem;
             color: @main-bg;
-            font-family: @otherFonts;
             text-align: center;
             padding: 1%;
             border-radius: 10px;
@@ -27,6 +26,6 @@ nav {
                 border-radius: 10px;
                 transition: 1s;
             }
-        }//a
-    } //links
-} //nav
+        }
+    }
+}
