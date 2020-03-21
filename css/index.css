@@ -1,9 +1,3 @@
-* {
-  max-width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -18,6 +12,19 @@
   font-display: swap;
   src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
 }
+* {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
 h1,
 h2,
 h3,
@@ -27,10 +34,26 @@ h6 {
   font-family: 'Ubuntu', sans-serif;
   color: saddlebrown;
 }
-html {
-  font-size: 62.5%;
+nav {
+  background-color: #42860E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: none;
 }
-html,
-body {
-  font-family: 'Roboto', sans-serif;
+nav .logo {
+  width: 5%;
+  padding: 1%;
+}
+nav .links {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: none;
+}
+nav .links a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #E5CB90;
 }
