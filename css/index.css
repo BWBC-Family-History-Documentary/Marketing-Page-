@@ -63,9 +63,16 @@ nav .links a {
   text-decoration: none;
   color: #E5CB90;
   font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 1%;
+  border-radius: 10px;
+  transition: 1s;
 }
 nav .links a:hover {
-  background-color: ;
+  background-color: saddlebrown;
+  padding: 1% 2%;
+  border-radius: 10px;
+  transition: 1s;
 }
 html,
 body {
@@ -304,4 +311,38 @@ header h1 {
   margin-bottom: 30px;
   max-width: 30%;
   height: auto;
+}
+footer {
+  background-color: #42860E;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: none;
+  padding: 1%;
+  border-top: 3px solid saddlebrown;
+}
+footer p {
+  color: #E5CB90;
+}
+footer .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: none;
+}
+footer .links a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #E5CB90;
+  text-align: center;
+  padding: 1%;
+  border-radius: 10px;
+  transition: 1s;
+}
+footer .links a:hover {
+  background-color: saddlebrown;
+  padding: 1% 2%;
+  border-radius: 10px;
+  transition: 1s;
 }
