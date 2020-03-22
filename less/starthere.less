@@ -21,6 +21,9 @@
       width: 60%;
       border: 3px solid @textColor;
       border-radius: 20px;
+      @media (max-width: 800px) {
+        width: 90%;
+      }
     } //video
   } //class .video
 } //header
@@ -37,11 +40,26 @@
   } //hr
 
   .step {
-    .flex(space-around);
-    padding: 3%;
+    .flex();
+    padding: 3% 10%;
+    @media (max-width: 500px) {
+      .flex(@flow: column);
+
+      div {
+        padding: 3% 0;
+      }
+    }
 
     .stepImg {
       width: 30%;
+      @media (max-width: 800px) {
+        width: 40%;
+      }
+      @media (max-width: 500px) {
+        width: 100%;
+        order: 1;
+      }
+
       img {
         border: 3px solid @textColor;
         border-radius: 20px;
@@ -49,22 +67,50 @@
     } // .stepImg
 
     .stepTitle {
+      .flex(@flow: column);
       text-align: center;
       width: 30%;
+      @media (max-width: 800px) {
+        margin: 0 3%;
+      }
 
+      @media (max-width: 500px) {
+        width: 100%;
+      }
       h2 {
         font-size: 5rem;
+        @media (max-width: 800px) {
+          font-size: 3rem;
+        }
       } //h2
 
       button {
         .buttons();
+        width: 30%;
+        padding: 2%;
+        margin: 2%;
+        font-size: 2rem;
+        font-weight: bold;
+        @media (max-width: 800px) {
+          width: 80%;
+        }
+        
       } //button
-    }
+    } //.stepTitle
+
     .description {
-      padding: 1%;
       width: 30%;
+      @media (max-width: 800px) {
+        width: 50%;
+      }
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+
       h3 {
         font-size: 3rem;
+        text-decoration: underline;
+        
       } //h3
 
       p {
@@ -78,6 +124,9 @@
 // this reveses every other step
 
 .step:nth-of-type(even) {
-  .flex(space-around, @flow: row-reverse);
-  padding: 3%;
+  .flex( @flow: row-reverse);
+  padding: 3% 10%;
+  @media (max-width: 500px) {
+    .flex(@flow: column);
+  }
 } //step nth of type
