@@ -898,4 +898,6 @@ footer .links a:hover {
 }
 .live:hover {
   box-shadow: none;
+  background-image: linear-gradient(#E5CB90, #42860E, #E5CB90);
+  color: ghostwhite;
 }
