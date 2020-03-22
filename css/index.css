@@ -91,6 +91,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 10px solid saddlebrown;
+  /*   h1 {
+        text-shadow: 4px 4px 4px black;
+        color: ghostwhite;
+        font-weight: bolder;
+        font-size: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    } */
 }
 .main-header .title-image {
   display: flex;
@@ -106,9 +116,6 @@ body {
   width: 60%;
   margin: 0 25%;
 }
-<<<<<<< HEAD
-.main-header gfit h2 {
-=======
 @media (max-width: 800px) {
   .main-header .title-image2 {
     margin-bottom: 20%;
@@ -116,7 +123,6 @@ body {
   }
 }
 .main-header h2 {
->>>>>>> b0bc6c0495051e8216c66b2330fea551c70a9e2f
   text-shadow: 4px 4px 4px black;
   color: ghostwhite;
   font-size: 4rem;
