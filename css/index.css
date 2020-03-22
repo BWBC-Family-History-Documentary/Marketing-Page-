@@ -248,8 +248,7 @@ body {
   flex-flow: column;
 }
 .stepContent hr {
-  width: 80%;
-  text-align: center;
+  width: 90%;
   border: 1px dashed saddlebrown;
 }
 .stepContent .step {
@@ -257,13 +256,10 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-flow: none;
-  margin: 1% auto;
-}
-.stepContent .step div {
-  margin: 1%;
+  padding: 3%;
 }
 .stepContent .step .stepImg {
-  width: 20%;
+  width: 30%;
 }
 .stepContent .step .stepImg img {
   border: 3px solid saddlebrown;
@@ -271,32 +267,42 @@ body {
 }
 .stepContent .step .stepTitle {
   text-align: center;
-  width: 20%;
+  width: 30%;
 }
 .stepContent .step .stepTitle h2 {
   font-size: 5rem;
 }
 .stepContent .step .stepTitle button {
-  width: 50%;
+  width: 30%;
   padding: 1%;
   font-size: 2rem;
+  background-color: #42860E;
+  color: #E5CB90;
+  border-radius: 10px;
   margin: 3%;
 }
+.stepContent .step .stepTitle button:hover {
+  padding: 2%;
+  font-size: 3rem;
+  transition: 1s;
+}
 .stepContent .step .description {
-  width: 60%;
   padding: 1%;
+  width: 30%;
 }
 .stepContent .step .description h3 {
   font-size: 3rem;
 }
 .stepContent .step .description p {
   padding: 1% 0;
+  color: saddlebrown;
 }
 .step:nth-of-type(even) {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-flow: row-reverse;
+  padding: 3%;
 }
 header h1 {
   text-align: center;

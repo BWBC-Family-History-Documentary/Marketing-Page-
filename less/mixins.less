@@ -5,8 +5,16 @@
     flex-flow: @flow;
 }
 
-.stepButtons(@padding: 1%;) {
+.stepButtons(@padding: 1%) {
     padding: @padding;
     font-size: 2rem;
+    background-color: @nav-bg;
+    color: @main-bg;
+    border-radius: 10px;
+    &:hover {
+        padding: @padding * 2;
+        font-size: 3rem;
+        transition: 1s;
+    }
     
 }
