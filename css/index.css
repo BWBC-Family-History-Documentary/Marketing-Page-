@@ -678,6 +678,7 @@ h2 {
   margin-bottom: 30px;
   max-width: 30%;
   height: auto;
+  border: 3px solid saddlebrown;
 }
 button {
   display: flex;
@@ -686,6 +687,9 @@ button {
   background-color: #42860E;
   border-radius: 4px;
   color: ghostwhite;
+  padding: 3px;
+  width: 30%;
+  font-size: 2rem;
 }
 button:hover {
   background-color: hsl(90, 60%, 50%);
@@ -716,6 +720,7 @@ button:hover a {
   margin-bottom: 30px;
   max-width: 30%;
   height: auto;
+  border: 3px solid saddlebrown;
 }
 .sectionThree {
   border-top: 3px dashed saddlebrown;
@@ -731,11 +736,17 @@ button:hover a {
   padding-bottom: 30px;
   text-align: center;
 }
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .container {
     width: 100%;
     padding-left: 1%;
     padding-right: 1%;
+  }
+  header h1 {
+    font-size: 4rem;
+  }
+  .family-tree {
+    max-width: 200%;
   }
   .sectionOne {
     width: 100%;
