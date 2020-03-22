@@ -1,5 +1,5 @@
 // * {
-// //   border: 1px solid black;
+//   border: 1px solid black;
 // }
 
 ////////////////////// HEADER ////////////////////
@@ -32,59 +32,54 @@
   .flex(@flow:column);
 
   hr {
-    width: 80%;
-    text-align: center;
+    width: 90%;
     border: 1px dashed @textColor;
-  }//hr
+  } //hr
 
   .step {
     .flex(space-around);
-    margin: 1% auto;
-
-    div {
-      margin: 1%;
-    }//step div
+    padding: 3%;
 
     .stepImg {
-      width: 20%;
-
+      width: 30%;
       img {
         border: 3px solid @textColor;
         border-radius: 20px;
-      }//img
-    }// .stepImg
+      } //img
+    } // .stepImg
 
     .stepTitle {
       text-align: center;
-      width: 20%;
+      width: 30%;
 
       h2 {
         font-size: 5rem;
-      }//h2
+      } //h2
 
       button {
-        width: 50%;
+        width: 30%;
         .stepButtons();
         margin: 3%;
-      }//button
+      } //button
     }
     .description {
-      width: 60%;
       padding: 1%;
-
+      width: 30%;
       h3 {
         font-size: 3rem;
-      }//h3
+      } //h3
 
       p {
-          padding: 1% 0;
+        padding: 1% 0;
+        color: @textColor;
       }
-    }//description
-  }//step
-}//step content
+    } //description
+  } //step
+} //step content
 
 // this reveses every other step
 
 .step:nth-of-type(even) {
-  .flex(@flow: row-reverse);
+  .flex(space-around, @flow: row-reverse);
+  padding: 3%;
 } //step nth of type
