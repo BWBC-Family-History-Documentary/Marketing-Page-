@@ -85,7 +85,7 @@ body {
   flex-flow: row wrap;
   width: 100%;
   margin: 0 auto;
-  background-image: url('/img/main-header-image.jpg');
+  background-image: url('/img/mainheaderimage.jpg');
   background-color: #cccccc;
   height: 75vh;
   background-position: center;
@@ -317,7 +317,7 @@ header h1 {
   margin-bottom: 30px;
   max-width: 50%;
   height: auto;
-  align: center;
+  align-items: center;
   border: 3px solid saddlebrown;
 }
 .sectionOne {
