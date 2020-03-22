@@ -85,7 +85,7 @@ body {
   flex-flow: row wrap;
   width: 100%;
   margin: 0 auto;
-  background-image: url('/img/mainheaderimage.jpg');
+  background-image: url('/img/main-header-image.jpg');
   background-color: #cccccc;
   height: 75vh;
   background-position: center;
