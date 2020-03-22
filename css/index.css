@@ -344,7 +344,7 @@ h2 {
   max-width: 30%;
   height: auto;
 }
-button {
+.buttonAll {
   width: 40%;
   padding: 1%;
   font-size: 2rem;
@@ -354,7 +354,7 @@ button {
   margin: 3%;
   align-items: center;
 }
-button:hover {
+.buttonAll:hover {
   padding: 2%;
   font-size: 3rem;
   transition: 1s;
