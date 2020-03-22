@@ -233,6 +233,11 @@ body {
   border: 3px solid saddlebrown;
   border-radius: 20px;
 }
+@media (max-width: 800px) {
+  .startHeader .videoContainer video {
+    width: 90%;
+  }
+}
 .stepContent {
   width: 100%;
   display: flex;
@@ -254,6 +259,11 @@ body {
 .stepContent .step .stepImg {
   width: 30%;
 }
+@media (max-width: 800px) {
+  .stepContent .step .stepImg {
+    width: 40%;
+  }
+}
 .stepContent .step .stepImg img {
   border: 3px solid saddlebrown;
   border-radius: 20px;
@@ -266,8 +276,18 @@ body {
   text-align: center;
   width: 30%;
 }
+@media (max-width: 800px) {
+  .stepContent .step .stepTitle {
+    margin: 0 3%;
+  }
+}
 .stepContent .step .stepTitle h2 {
   font-size: 5rem;
+}
+@media (max-width: 800px) {
+  .stepContent .step .stepTitle h2 {
+    font-size: 3rem;
+  }
 }
 .stepContent .step .stepTitle button {
   display: flex;
@@ -291,8 +311,18 @@ body {
 .stepContent .step .stepTitle button:hover a {
   color: saddlebrown;
 }
+@media (max-width: 800px) {
+  .stepContent .step .stepTitle button {
+    width: 80%;
+  }
+}
 .stepContent .step .description {
   width: 30%;
+}
+@media (max-width: 800px) {
+  .stepContent .step .description {
+    width: 50%;
+  }
 }
 .stepContent .step .description h3 {
   font-size: 3rem;

@@ -21,6 +21,9 @@
       width: 60%;
       border: 3px solid @textColor;
       border-radius: 20px;
+      @media (max-width: 800px) {
+        width: 90%;
+      }
     } //video
   } //class .video
 } //header
@@ -42,6 +45,9 @@
 
     .stepImg {
       width: 30%;
+      @media (max-width: 800px) {
+        width: 40%;
+      }
       img {
         border: 3px solid @textColor;
         border-radius: 20px;
@@ -52,9 +58,15 @@
       .flex(@flow: column);
       text-align: center;
       width: 30%;
+      @media (max-width: 800px) {
+        margin: 0 3%;
+      }
 
       h2 {
         font-size: 5rem;
+        @media (max-width: 800px) {
+          font-size: 3rem;
+        }
       } //h2
 
       button {
@@ -64,16 +76,23 @@
         margin: 2%;
         font-size: 2rem;
         font-weight: bold;
+        @media (max-width: 800px) {
+          width: 80%;
+        }
         
       } //button
     } //.stepTitle
-    
+
     .description {
       width: 30%;
+      @media (max-width: 800px) {
+        width: 50%;
+      }
 
       h3 {
         font-size: 3rem;
         text-decoration: underline;
+        
       } //h3
 
       p {
