@@ -51,12 +51,27 @@ nav .logo {
   width: 5%;
   padding: 1%;
 }
+@media (max-width: 800px) {
+  nav .logo {
+    width: 10%;
+  }
+}
+@media (max-width: 500px) {
+  nav .logo {
+    width: 15%;
+  }
+}
 nav .links {
   width: 80%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: none;
+}
+@media (max-width: 500px) {
+  nav .links {
+    width: 90%;
+  }
 }
 nav .links a {
   font-size: 3rem;
@@ -67,6 +82,16 @@ nav .links a {
   padding: 1%;
   border-radius: 10px;
   transition: 1s;
+}
+@media (max-width: 800px) {
+  nav .links a {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  nav .links a {
+    font-size: 1.6rem;
+  }
 }
 nav .links a:hover {
   background-color: saddlebrown;
