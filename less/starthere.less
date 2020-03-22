@@ -42,12 +42,24 @@
   .step {
     .flex();
     padding: 3% 10%;
+    @media (max-width: 500px) {
+      .flex(@flow: column);
+
+      div {
+        padding: 3% 0;
+      }
+    }
 
     .stepImg {
       width: 30%;
       @media (max-width: 800px) {
         width: 40%;
       }
+      @media (max-width: 500px) {
+        width: 100%;
+        order: 1;
+      }
+
       img {
         border: 3px solid @textColor;
         border-radius: 20px;
@@ -62,6 +74,9 @@
         margin: 0 3%;
       }
 
+      @media (max-width: 500px) {
+        width: 100%;
+      }
       h2 {
         font-size: 5rem;
         @media (max-width: 800px) {
@@ -88,6 +103,9 @@
       @media (max-width: 800px) {
         width: 50%;
       }
+      @media (max-width: 500px) {
+        width: 100%;
+      }
 
       h3 {
         font-size: 3rem;
@@ -108,4 +126,7 @@
 .step:nth-of-type(even) {
   .flex( @flow: row-reverse);
   padding: 3% 10%;
+  @media (max-width: 500px) {
+    .flex(@flow: column);
+  }
 } //step nth of type

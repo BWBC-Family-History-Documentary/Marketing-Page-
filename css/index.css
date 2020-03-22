@@ -256,12 +256,29 @@ body {
   flex-flow: none;
   padding: 3% 10%;
 }
+@media (max-width: 500px) {
+  .stepContent .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  .stepContent .step div {
+    padding: 3% 0;
+  }
+}
 .stepContent .step .stepImg {
   width: 30%;
 }
 @media (max-width: 800px) {
   .stepContent .step .stepImg {
     width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .stepContent .step .stepImg {
+    width: 100%;
+    order: 1;
   }
 }
 .stepContent .step .stepImg img {
@@ -279,6 +296,11 @@ body {
 @media (max-width: 800px) {
   .stepContent .step .stepTitle {
     margin: 0 3%;
+  }
+}
+@media (max-width: 500px) {
+  .stepContent .step .stepTitle {
+    width: 100%;
   }
 }
 .stepContent .step .stepTitle h2 {
@@ -324,6 +346,11 @@ body {
     width: 50%;
   }
 }
+@media (max-width: 500px) {
+  .stepContent .step .description {
+    width: 100%;
+  }
+}
 .stepContent .step .description h3 {
   font-size: 3rem;
   text-decoration: underline;
@@ -338,6 +365,14 @@ body {
   align-items: center;
   flex-flow: row-reverse;
   padding: 3% 10%;
+}
+@media (max-width: 500px) {
+  .step:nth-of-type(even) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
 }
 header h1 {
   text-align: center;
