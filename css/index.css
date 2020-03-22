@@ -867,3 +867,35 @@ footer .links a:hover {
   border-radius: 10px;
   transition: 1s;
 }
+.live {
+  position: fixed;
+  top: 11.5%;
+  right: 0;
+  border-radius: 30px;
+  background-image: linear-gradient(#42860E, #E5CB90, #42860E);
+  height: 10%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: none;
+  text-align: center;
+  color: saddlebrown;
+  font-weight: bold;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .live {
+    width: 12%;
+    font-size: 1.5rem;
+    top: 10.8%;
+  }
+}
+@media (max-width: 500px) {
+  .live {
+    display: none;
+  }
+}
+.live:hover {
+  box-shadow: none;
+}
