@@ -51,12 +51,27 @@ nav .logo {
   width: 5%;
   padding: 1%;
 }
+@media (max-width: 800px) {
+  nav .logo {
+    width: 10%;
+  }
+}
+@media (max-width: 500px) {
+  nav .logo {
+    width: 15%;
+  }
+}
 nav .links {
   width: 80%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: none;
+}
+@media (max-width: 500px) {
+  nav .links {
+    width: 90%;
+  }
 }
 nav .links a {
   font-size: 3rem;
@@ -67,6 +82,16 @@ nav .links a {
   padding: 1%;
   border-radius: 10px;
   transition: 1s;
+}
+@media (max-width: 800px) {
+  nav .links a {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  nav .links a {
+    font-size: 1.6rem;
+  }
 }
 nav .links a:hover {
   background-color: saddlebrown;
@@ -798,8 +823,23 @@ footer {
   padding: 1%;
   border-top: 3px solid saddlebrown;
 }
+@media (max-width: 800px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column-reverse;
+  }
+}
 footer p {
   color: #E5CB90;
+}
+@media (max-width: 800px) {
+  footer p {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 1.5rem;
+  }
 }
 footer .links {
   display: flex;
@@ -816,9 +856,46 @@ footer .links a {
   border-radius: 10px;
   transition: 1s;
 }
+@media (max-width: 500px) {
+  footer .links a {
+    font-size: 1.8rem;
+  }
+}
 footer .links a:hover {
   background-color: saddlebrown;
   padding: 1% 2%;
   border-radius: 10px;
   transition: 1s;
+}
+.live {
+  position: fixed;
+  top: 11.5%;
+  right: 0;
+  border-radius: 30px;
+  background-image: linear-gradient(#42860E, #E5CB90, #42860E);
+  height: 10%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: none;
+  text-align: center;
+  color: saddlebrown;
+  font-weight: bold;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .live {
+    width: 12%;
+    font-size: 1.5rem;
+    top: 10.8%;
+  }
+}
+@media (max-width: 500px) {
+  .live {
+    display: none;
+  }
+}
+.live:hover {
+  box-shadow: none;
 }
