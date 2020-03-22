@@ -823,8 +823,23 @@ footer {
   padding: 1%;
   border-top: 3px solid saddlebrown;
 }
+@media (max-width: 800px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column-reverse;
+  }
+}
 footer p {
   color: #E5CB90;
+}
+@media (max-width: 800px) {
+  footer p {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 1.5rem;
+  }
 }
 footer .links {
   display: flex;
@@ -840,6 +855,11 @@ footer .links a {
   padding: 1%;
   border-radius: 10px;
   transition: 1s;
+}
+@media (max-width: 500px) {
+  footer .links a {
+    font-size: 1.8rem;
+  }
 }
 footer .links a:hover {
   background-color: saddlebrown;
