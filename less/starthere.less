@@ -37,8 +37,8 @@
   } //hr
 
   .step {
-    .flex(space-around);
-    padding: 3%;
+    .flex();
+    padding: 3% 10%;
 
     .stepImg {
       width: 30%;
@@ -49,6 +49,7 @@
     } // .stepImg
 
     .stepTitle {
+      .flex(@flow: column);
       text-align: center;
       width: 30%;
 
@@ -58,13 +59,20 @@
 
       button {
         .buttons();
+        width: 30%;
+        padding: 2%;
+        margin: 2%;
+        font-size: 2rem;
+        font-weight: bold;
+        
       } //button
-    }
+    } //.stepTitle
     .description {
-      padding: 1%;
       width: 30%;
+
       h3 {
         font-size: 3rem;
+        text-decoration: underline;
       } //h3
 
       p {
@@ -78,6 +86,6 @@
 // this reveses every other step
 
 .step:nth-of-type(even) {
-  .flex(space-around, @flow: row-reverse);
-  padding: 3%;git a
+  .flex( @flow: row-reverse);
+  padding: 3% 10%;
 } //step nth of type

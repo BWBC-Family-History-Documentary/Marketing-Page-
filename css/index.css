@@ -92,16 +92,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 10px solid saddlebrown;
-  /*   h1 {
-        text-shadow: 4px 4px 4px black;
-        color: ghostwhite;
-        font-weight: bolder;
-        font-size: 8rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    } */
 }
 .main-header .title-image {
   display: flex;
@@ -111,7 +101,7 @@ body {
   width: 50%;
   margin: 0 25%;
 }
-.main-header h2 {
+.main-header gfit h2 {
   text-shadow: 4px 4px 4px black;
   color: ghostwhite;
   font-size: 4rem;
@@ -256,10 +246,10 @@ body {
 }
 .stepContent .step {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: none;
-  padding: 3%;
+  padding: 3% 10%;
 }
 .stepContent .step .stepImg {
   width: 30%;
@@ -269,6 +259,10 @@ body {
   border-radius: 20px;
 }
 .stepContent .step .stepTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
   text-align: center;
   width: 30%;
 }
@@ -282,6 +276,11 @@ body {
   background-color: #42860E;
   border-radius: 4px;
   color: ghostwhite;
+  width: 30%;
+  padding: 2%;
+  margin: 2%;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .stepContent .step .stepTitle button:hover {
   background-color: hsl(90, 60%, 50%);
@@ -293,11 +292,11 @@ body {
   color: saddlebrown;
 }
 .stepContent .step .description {
-  padding: 1%;
   width: 30%;
 }
 .stepContent .step .description h3 {
   font-size: 3rem;
+  text-decoration: underline;
 }
 .stepContent .step .description p {
   padding: 1% 0;
@@ -305,10 +304,10 @@ body {
 }
 .step:nth-of-type(even) {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: row-reverse;
-  padding: 3%;
+  padding: 3% 10%;
 }
 header h1 {
   text-align: center;
