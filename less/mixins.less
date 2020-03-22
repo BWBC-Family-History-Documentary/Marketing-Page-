@@ -5,16 +5,22 @@
     flex-flow: @flow;
 }
 
-.stepButtons(@padding: 1%) {
-    padding: @padding;
-    font-size: 2rem;
+.buttons() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: @nav-bg;
-    color: @main-bg;
-    border-radius: 10px;
-    &:hover {
-        padding: @padding * 2;
-        font-size: 3rem;
-        transition: 1s;
-    }
-    
+    border-radius: 4px;
+    color: ghostwhite;
+        &:hover {
+            background-color: lighten(hsl(90, 60%, 40%), 10%);
+            box-shadow: 5px 5px black;
+            transition: .15s;
+            color: saddlebrown;
+                a{
+                    color:saddlebrown;
+                }
+        }
+
 }
+
