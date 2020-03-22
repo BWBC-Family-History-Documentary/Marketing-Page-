@@ -15,6 +15,10 @@ header h1 {
     border: 3px solid @textColor;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
 .sectionOne {
     border-top: 3px dashed @textColor;
     padding: 30px 150px 0px 30px;
@@ -39,28 +43,34 @@ header h1 {
     height: auto;
 }
 
-.sectionTwo {
+button {
+    width: 50%;
+    .stepButtons();
+    margin: 3%;
+  }
+
+.sectionReverse {
     border-top: 3px dashed @textColor;
-    padding-top: 30px;
+    padding: 30px 150px 0px 150px;
     display:flex;
+    justify-content: center;
     align-items: center;
 }
 
-.sectionTwoText {
+.sectionReverseText {
     display: block;
-    margin-left: auto;
+    margin-left: 150px;
     margin-right: auto;
     width: 50%;
 }
 
-.sectionTwoImage {
+.sectionReverseImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
     max-width: 30%;
     height: auto;
-    padding-right: 30px;
 }
 
 .sectionThree {
@@ -76,28 +86,62 @@ header h1 {
     margin-right: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
-
+    text-align: center;
 }
 
-.sectionFour {
-    border-top: 3px dashed @textColor;
-    padding: 30px 150px 0px 30px;
-    display:flex;
+
+@media (max-width: 1000px) {
+
+.container {
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.sectionOne {
+    width: 100%;
+    flex: wrap;
+    flex-direction: column;
     align-items: center;
+    padding: 30px 0px 0px 0px;
 }
 
-.sectionFourText {
-    display: block;
-    margin-left: 150px;
-    margin-right: auto;
-    width: 50%;
-}
-
-.sectionFourImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.sectionOneText {
+    width: 100%;
+    margin-left: 0px;
     margin-bottom: 30px;
-    max-width: 30%;
-    height: auto;
+}
+
+.sectionOneImage {
+    margin-bottom: 30px;
+    padding-right: 0px;
+    max-width: 200%;
+    margin-right: 0px;
+}
+
+.sectionReverse {
+    width: 100%;
+    flex: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.sectionReverseText {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+
+.sectionReverseImage {
+    margin-bottom: 30px;
+    padding-right: 0px;
+    max-width: 200%;
+    margin-right: 0px;
+}
+.sectionThree {
+    flex-direction: column;
+}
+
+
 }
