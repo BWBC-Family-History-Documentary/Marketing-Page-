@@ -228,7 +228,6 @@ header h1 {
   margin-bottom: 30px;
   max-width: 50%;
   height: auto;
-  align: center;
   border: 3px solid saddlebrown;
 }
 .sectionOne {
@@ -251,7 +250,6 @@ header h1 {
   margin-bottom: 30px;
   max-width: 30%;
   height: auto;
-  align: center;
 }
 .sectionTwo {
   border-top: 3px dashed saddlebrown;
