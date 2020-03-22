@@ -172,7 +172,7 @@ body {
   flex-flow: column;
 }
 .stepContent hr {
-  width: 80%;
+  width: 90%;
   border: 1px dashed saddlebrown;
 }
 .stepContent .step {
